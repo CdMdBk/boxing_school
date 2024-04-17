@@ -1,0 +1,29 @@
+.filter {
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%, 0);
+
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 30px 20px;
+    width: 360px;
+
+    border: 1px solid #000;
+    background-color: #fff;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.filter_active {
+    display: flex;
+    opacity: 1;
+}
+
+.filter > .training__select,
+.filter > .training_heading {
+    margin-bottom: 20px;
+}
